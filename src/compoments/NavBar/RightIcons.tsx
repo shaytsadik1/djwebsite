@@ -1,4 +1,5 @@
 import { Flex, Link, Icon, useBreakpointValue } from '@chakra-ui/react'
+import { useState } from 'react';
 import { BsInstagram, BsFacebook, BsYoutube } from 'react-icons/bs'
 import { ImSoundcloud } from 'react-icons/im'
 
@@ -8,16 +9,16 @@ const RightIcons = () => {
   return (
     <Flex paddingRight={4}>
         <Link pr={icondiff} href='https://www.instagram.com/shaytsadik/'> 
-        <Icon as={BsInstagram} boxSize={iconSize}  _hover={{ backgroundColor:"#A9A9A9" }}></Icon>
+        <Icon as={BsInstagram} boxSize={iconSize}  _hover={{ transform: "scale(1.2)"}}></Icon>
         </Link>
         <Link pr={icondiff} href='https://www.facebook.com/shaytsadik'> 
-        <Icon as={BsFacebook} boxSize={iconSize} ></Icon>
+        <Icon as={BsFacebook} boxSize={iconSize} _hover={{ transform: "scale(1.2)"}} ></Icon>
         </Link>
         <Link pr={icondiff} href='https://www.youtube.com/@shaytsadik'> 
-        <Icon as={BsYoutube} boxSize={iconSize}></Icon>
+        <Icon as={BsYoutube} boxSize={iconSize}  _hover={{ transform: "scale(1.2)"}}></Icon>
         </Link>
         <Link pr={icondiff} href='https://soundcloud.com/shay-tsadik'> 
-        <Icon as={ImSoundcloud} boxSize={iconSize}></Icon>
+        <Icon as={ImSoundcloud} boxSize={iconSize}  _hover={{ transform: "scale(1.2)"}}></Icon>
         </Link>
     </Flex>
   )

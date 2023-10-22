@@ -1,11 +1,14 @@
-import { Flex, Link } from '@chakra-ui/react'
-const CenterMenu = () => {
+import { Flex, Link, Text } from '@chakra-ui/react'
+interface Props{
+    menus:string[];
+}
+const CenterMenu = (props:Props) => {
   return (
     <Flex as="nav" >
-        <Link pr={4}>Home</Link>
-        <Link pr={4}>About</Link>
-        <Link pr={4}>Services</Link>
-        <Link pr={4}>Contact</Link>
+        <Text fontSize='xl' pr={4} _hover={{ fontSize: "1.5rem" }} >{props.menus[0]} </Text>
+        <Text fontSize='xl' pr={4} _hover={{ fontSize: "1.5rem" }}>{props.menus[1]}</Text>
+        <Text fontSize='xl' pr={4} _hover={{ fontSize: "1.5rem" }}>{props.menus[2]}</Text>
+        <Text fontSize='xl' pr={4} _hover={{ fontSize: "1.5rem" }}>{props.menus[3]}</Text>
     </Flex>
   )
 }
