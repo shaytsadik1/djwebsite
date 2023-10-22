@@ -5,8 +5,8 @@ const About = () => {
     
   return (
     <Center>
-    <HStack justify={"space-between"}>  
-            <Image src={photo} height={"300px"} width={"600px"} style={{ borderRadius: "16px" }} paddingLeft={50}/>
+    <HStack justify={"center"} spacing={20}>  
+            <Image src={photo} width={"40%"} borderRadius="lg" />
             <Box maxW="45%" paddingRight={5}>
             <Text fontSize={{ lg: "16px", xl:"22px" }}>
             Nice to meet you, my name is Shay and I am a wedding and nightlife DJ from Tel Aviv.<br/>

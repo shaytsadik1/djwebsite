@@ -24,8 +24,9 @@ function App() {
         <Box mt={4}>
           <VideoSection/>
         </Box>
+        <Divider borderColor="white" my={4} />
         <Show above='lg'>
-          <Box mt={4}> {/* Add margin-top to reduce spacing */}
+          <Box mt={4} > {/* Add margin-top to reduce spacing */}
             <About />
           </Box>
         </Show>
@@ -41,7 +42,7 @@ function App() {
         <Box mt={4}> {/* Add margin-top to reduce spacing */}
         <Gallery/>
         </Box>
-        <HStack  mt={4} spacing={50} justifyContent={"center"}>
+        <HStack  mt={4} spacing={150} justifyContent={"center"}>
         <Box>
           <Form/>
         </Box>
